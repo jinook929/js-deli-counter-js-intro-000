@@ -4,6 +4,9 @@ function takeANumber(arr, name) {
 }
 
 function currentLine(arr) {
+  if(arr.length === 0) {
+    return "There is nobody waiting to be served!";
+  }
   let str = "The line is currently:";
   for(let i = 0; i < arr.length; i++) {
     if(i !== (arr.length - 1)) {
@@ -17,7 +20,7 @@ function currentLine(arr) {
 
 function nowServing(arr) {
   if(arr.length === 0) {
-    return
+    return "There is nobody waiting to be served!";
   }
   let current = arr[0];
   arr.shift();
