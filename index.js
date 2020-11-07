@@ -1,3 +1,4 @@
 function takeANumber(arr, name) {
-  return ``;
+  arr.push(name);
+  return `Welcome, ${name}. You are number ${arr.length} in line.`;
 }
