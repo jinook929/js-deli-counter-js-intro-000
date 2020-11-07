@@ -4,6 +4,13 @@ function takeANumber(arr, name) {
 }
 
 function currentLine(arr) {
-  let str = ""
-  return 
+  let str = "The line is currently:";
+  for(let i = 0; i < arr.length; i++) {
+    if(i !== (arr.length - 1)) {
+      str += ` ${(i + 1)}. ${arr[i]},`
+    } else {
+      str += ` ${(i + 1)}. ${arr[i]}`
+    }
+  }
+  return str;
 }
