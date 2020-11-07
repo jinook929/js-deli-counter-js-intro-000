@@ -16,6 +16,9 @@ function currentLine(arr) {
 }
 
 function nowServing(arr) {
+  if(arr.length === 0) {
+    return
+  }
   let current = arr[0];
   arr.shift();
   return `Currently serving ${current}.`;
