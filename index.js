@@ -14,3 +14,8 @@ function currentLine(arr) {
   }
   return str;
 }
+
+function nowServing(arr) {
+  let current = arr[0];
+  arr.shift()
+}
